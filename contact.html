@@ -113,10 +113,6 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-             // Disable the submit button to prevent multiple submissions
-            submitButton.disabled = true;
-            submitButton.textContent = 'Processing...';
-
             // Validate mobile number input
             if (!/^\d{10}$/.test(mobileInput.value)) {
                 mobileError.style.display = 'block';
