@@ -1,52 +1,58 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cribest - Get Fantasy Games ID</title>
     <meta charset="UTF-8">
     <meta name="description" content="Get Fantasy Games Information">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/all.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <title>GF Cribest - Get Fantasy Games ID</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
     <style>
-        .logo{
+        .logo {
             text-align: center;
             width: 100%;
-           
         }
-        .logo img{
-            position: absolute;
-            z-index: 1;
-            padding: 10px 0 0 0;
-
+        .banner_content {
+            margin-top: 30px;
         }
-        .banner_content{
-            margin-top: 30px;    
-        }
-        .navbar-nav .show > .nav-link{
-            color:rgb(88, 87, 87)!important;
-        }
-         .navbar-nav .nav-link.active{
-            color:#fff!important;
-        }
-        .about-section{
-            padding: 50px 0;
-            background: rgb(255,248,200);
-background: linear-gradient(329deg, rgba(255,248,200,1) 19%, rgba(255,207,172,1) 82%, rgba(255,201,168,1) 98%);
-        }
-        .about-section .inner-text h3{
-            font-size:45px;
-            font-weight: 700;
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
             margin-bottom: 20px;
         }
-        .about-section .inner-text p{
-            font-size: 18px;;
+        .contact-form input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
         }
-        .navbar-expand-lg .navbar-nav li{
-    margin:0 20px;
-}
+        .contact-form button {
+            padding: 12px;
+            background-color: #25d366;
+            border: none;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #1ebe5d;
+        }
+        .error {
+            color: red;
+            font-size: 0.9rem;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -54,67 +60,92 @@ background: linear-gradient(329deg, rgba(255,248,200,1) 19%, rgba(255,207,172,1)
         <div class="inner_wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container">
-                  <a class="navbar-brand" href="index.html"><img src="assets/images/cricbets-high-resolution-logo-transparent.png" width="150px" alt=""></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end;">
-                    <ul class="navbar-nav   mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                          </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/cricbets-high-resolution-logo-transparent.png" width="150px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end;">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
-             
-           
-          
-                        <div class="blue_box_section section_gap pb-0">
-                <div class="container">
+            </nav>
+
+            <div class="container">
+                <div class="blue_box_section section_gap pb-0">
                     <div class="blue_box">
                         <h3 class="sectionsubtitle">Contact Now and</h3>
-                        <h2 class="sectionmaintitle">Start Playing Fantasy Games
-                        <a target="_blank" href="https://wa.link/y6ks08" class="whatsapp_btn bigwhatsapp">
-                            <div class="whatsappicon">
-                                <img src="assets/images/whatsapp.svg" alt="whatsapp">
-                            </div>
-                            <div class="whatsapptext">
-                                Click Here For Demo
-                            </div>
-                        </a>
-                    </h2></div>
-                    <br>
+                        <h2 class="sectionmaintitle">Start Playing Fantasy Games</h2>
+                        <div class="contact-form">
+                            <form id="contactForm" method="POST">
+                                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required pattern="\d{10}" maxlength="10">
+                                <span class="error" id="mobileError">Please enter a valid 10-digit mobile number.</span>
+                                <button type="submit">
+                                    <img src="assets/images/whatsapp.svg" alt="whatsapp">
+                                    CONTACT US
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottom_footer">
             <div class="container-fluid">
-                <p> DISCLAIMER : This website's content is intended for adults aged 18 and above. If you are from Andhra Pradesh, Telangana, Orissa, Assam, Sikkim, and Nagaland, please refrain from using this website. No real money involvement.</p>
+                <p>DISCLAIMER: This website's content is intended for adults aged 18 and above. If you are from Andhra Pradesh, Telangana, Orissa, Assam, Sikkim, and Nagaland, please refrain from using this website. No real money involvement.</p>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/all.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4886266,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzUcwXXgIjN_xUAH2dXPud53izfhlIgXOGoHhI7vZlukX2_p6es8s2sOdvS14Z71YE/exec';
+        const form = document.getElementById('contactForm');
+        const mobileInput = document.getElementById('mobile');
+        const mobileError = document.getElementById('mobileError');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Validate mobile number input
+            if (!/^\d{10}$/.test(mobileInput.value)) {
+                mobileError.style.display = 'block';
+                return;
+            } else {
+                mobileError.style.display = 'none';
+            }
+
+            // Get the current date and time in IST
+            const now = new Date();
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            const istOffset = 5.5 * 60 * 60 * 1000; // IST offset is +5:30 from UTC
+            const istTime = new Date(utc + istOffset);
+            const datetime = istTime.toISOString().slice(0, 19).replace('T', ' '); // Format date and time
+
+            // Fetch user's IP address
+            const ipResponse = await fetch('https://api.ipify.org?format=json');
+            const ipData = await ipResponse.json();
+            const ip = ipData.ip;
+
+            // Create form data object
+            const formData = new FormData(form);
+            formData.append('datetime', datetime);
+            formData.append('ip', ip);
+
+            // Send form data to Google Sheet
+            try {
+                await fetch(scriptURL, { method: 'POST', body: formData });
+                window.location.href = 'thankyou.html'; // Redirect to thank you page
+            } catch (error) {
+                console.error('Error!', error.message);
+            }
+        });
+    </script>
 </body>
 </html>
